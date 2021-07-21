@@ -1,0 +1,51 @@
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur,
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+"cursors\special.cur"
+"cursors\pen.cur"
+"cursors\help.cur"
+"cursors\link.cur"
+"cursors\cross-move.cur"
+"cursors\default.cur"
+"cursors\cross-select.cur"
+"cursors\diag1.cur"
+"cursors\diag2.cur"
+"cursors\horizontal.cur"
+"cursors\vertical.cur"
+"cursors\text-select.cur"
+"cursors\not-allowed.cur"
+"cursors\waiting.ani"
+"cursors\busy.ani"
+
+[Strings]
+CUR_DIR         = "Cursors\BreezeWhite"
+SCHEME_NAME     = "KDE Breeze White"
+pointer         = "cursors\default.cur"
+help            = "cursors\help.cur"
+work            = "cursors\waiting.ani"
+busy            = "cursors\busy.ani"
+cross           = "cursors\cross-select.cur"
+text            = "cursors\text-select.cur"
+hand            = "cursors\pen.cur"
+unavailable     = "cursors\not-allowed.cur"
+vert            = "cursors\vertical.cur"
+horz            = "cursors\horizontal.cur"
+dgn1            = "cursors\diag1.cur"
+dgn2            = "cursors\diag2.cur"
+move            = "cursors\cross-move.cur"
+alternate       = "cursors\special.cur"
+link            = "cursors\link.cur"
